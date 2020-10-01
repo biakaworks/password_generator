@@ -2,10 +2,10 @@
 //"Always start in Laymen Psuedo Code and then actually code"
 var generateBtn = document.querySelector("#generate");
 var userResults=[];
-var numArr=[1,2,3];
-var lowerArr=['a','b','c'];
-var upperArr=['A','B','C'];
-var islower;
+var numArr=[0,1,2,3,4,5,6,7,8,9];
+var lowerArr=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var upperArr=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var isLower;
 var isUpper;
 var userLength;
 var finalpw="";
@@ -16,16 +16,16 @@ function generatePassword(){
          // VALIDATE LATER least 8 characters and no more than 128 characters
    
     //lowercase, need to ask user for lowers (confirm)
-    isLower= confirm("do you want lowers?");
+    isLower= confirm("do you want Lower Case Letters?");
     //what should we do? add the lowers to the results (userResults)
     if(isLower==true){
         //userResults.push(lowerArr)
         for(var i=0;i<lowerArr.length;i++){
             userResults.push(lowerArr[i]);
         }
-        //uppercase, 
-        isLower= confirm("do you want lowers?");
-
+        //uppercase, need to ask user for lowers (confirm)
+    isUpper= confirm("do you want Upper Case Letters?");
+    //what should we do? add the lowers to the results (userResults)
         if(isUpper==true){
             for(var i=0; i<upperArr.length; i++){
                 userResults.push(lowerArr[i]);
