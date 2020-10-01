@@ -23,11 +23,15 @@ function generatePassword(){
         for(var i=0;i<lowerArr.length;i++){
             userResults.push(lowerArr[i]);
         }
-        //i=0=1=2=3
+        //uppercase, 
+        isLower= confirm("do you want lowers?");
+
+        if(isUpper==true){
+            for(var i=0; i<upperArr.length; i++){
+                userResults.push(lowerArr[i]);
+            }
+        }
     }
-
-    //uppercase, 
-
 
   
     //numeric, and/or 
