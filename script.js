@@ -7,6 +7,8 @@ var lowerArr=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q
 var upperArr=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var isLower;
 var isUpper;
+var isNumeric;
+var isSpecial;
 var userLength;
 var finalpw="";
 
@@ -33,8 +35,13 @@ function generatePassword(){
         }
     }
 
-  
-    //numeric, and/or 
+        //numeric, need to ask user for numerics (confirm)
+        isNumeric= confirm("do you want Numbers?");
+        //what should we do? add the numerics to the results (userResults)
+        if(isNumeric==true){
+            //userResults.push(lowerArr)
+            for(var i=0;i<numArr.length;i++){
+                userResults.push(numArr[i]);
     
     //special characters
             // LATER VALIDATE should be validated and at least one character type should be selected
