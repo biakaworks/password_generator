@@ -102,4 +102,4 @@ console.log(mult2(23213,4233));
 var result= mult2(3,4); //12
 console.log(result);
 
-
+        }
